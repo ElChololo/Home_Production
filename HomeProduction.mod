@@ -1,11 +1,11 @@
-% Variables no estoc·sticas
+% Variables no estoc√°sticas
 var C,C_M,C_H,h_M,h_H,k_M,k_H,z_M,z_H;
 
-% Variables exÛgenas
+% Variables ex√≥genas
 varexo e_M,e_H;
 
 
-% Par·metros del modelo
+% Par√°metros del modelo
 parameters beta,theta,delta,A,a,rho,eta,sigma_M,sigma_H,elasticidad,correlacion;
 set_param_value('beta',beta);
 set_param_value('theta',theta);
@@ -45,12 +45,12 @@ end;
 % Valores iniciales
 initval;
 
-k_M=10;
-k_H=2;
-C_M= 0.5;
-C_H= 0.5;
-h_M=0.33;
-h_H=0.28;
+k_M=12;
+k_H=1.6;
+C_M= 0.3;
+C_H= 0.8;
+h_M=0.32;
+h_H=0.27;
 C=(a*C_M^(elasticidad)+(1-a)*C_H^(elasticidad))^(1/(elasticidad));
 z_M=0;
 z_H=0;
